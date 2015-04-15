@@ -175,7 +175,7 @@ var timer_maker = function (  ) {
 				//   }
 
 					// give focus to the first form object inside, if any
-					$(part).find(':input[type!="hidden"][class!="scaleButton"]').second().focus();
+					$(part).find(':input[type!="hidden"][class!="scaleButton"]').next().focus();
 				}
 			}
 		}
