@@ -197,6 +197,7 @@ var timer_maker = function (  ) {
 		/// validate serverValues here to be non-empty and distinct
 
 		var str = "";
+		buttons.focus();  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		str += '<div class="scaleWrapper">';
 		str += '<div class="scaleEdgeLabel">' + edgelabels[0] + '</div>';
 		for (var i=0; i<buttons.length; i+=1) {
@@ -512,7 +513,7 @@ var timer_maker = function (  ) {
 		str += '<input type="button" ';
 		str += ' id="' + soundID +'"';
 		str += ' value="' + label + '"';
-		str += ' onClick="Experigen.screen().playSound(\'' + soundID + '\',this); document.getElementById(\'' + soundID + '\').style.display=\'none\'; shiftFocus(); if(Experigen.trackTimes) {Experigen.timeTracker.set_start_time();}" ';
+		str += ' onClick="Experigen.screen().playSound(\'' + soundID + '\',this); document.getElementById(\'' + soundID + '\').style.display=\'none\'; if(Experigen.trackTimes) {Experigen.timeTracker.set_start_time();}" ';
 		str += ' class="soundbutton"'
 		str += '>';
 		return str;
