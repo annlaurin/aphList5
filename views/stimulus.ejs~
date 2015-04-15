@@ -4,9 +4,8 @@
 <p>
 
 	<%= makeSoundButton({soundFile: audio + '.mp3'}) %>
-</div>
 <p>
-<div class="trialpartWrapper" style="text-align: left;">
+
 <%= makeScale({buttons: ["Ошибка!"], edgelabels: ["", ""], disable:true, hide:true, rightAnswer: "1"}) %>
 </div>
 
