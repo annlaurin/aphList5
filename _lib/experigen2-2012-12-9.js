@@ -175,7 +175,7 @@ var timer_maker = function (  ) {
 				//   }
 
 					// give focus to the first form object inside, if any
-					$(part).find(':input[type!="hidden"]').last().focus();
+					$(part).find(':input[type!="hidden"][class!="scaleButton"]').first().focus();
 				}
 			}
 		}
@@ -512,7 +512,7 @@ var timer_maker = function (  ) {
 		str += '<input type="button" ';
 		str += ' id="' + soundID +'"';
 		str += ' value="' + label + '"';
-		str += ' onClick="Experigen.screen().playSound(\'' + soundID + '\',this); document.getElementById(\'' + soundID + '\').style.display=\'none\'; if(Experigen.trackTimes) {Experigen.timeTracker.set_start_time();}" ';
+		str += ' onClick="Experigen.screen().playSound(\'' + soundID + '\',this); document.getElementById(\'' + soundID + '\').style.display=\'none\'; if(Experigen.trackTimes) {Experigen.timeTracker.set_start_time(); shiftFocus();}" ';
 		str += ' class="soundbutton"'
 		str += '>';
 		return str;
