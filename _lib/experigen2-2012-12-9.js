@@ -175,7 +175,7 @@ var timer_maker = function (  ) {
 				//   }
 
 					// give focus to the first form object inside, if any
-					$(part).find(':input[type!="hidden"][class!="scaleButton"]').first().focus();
+					$(part).find(':input[type!="hidden"][class!="scaleButton"]').second().focus();
 				}
 			}
 		}
@@ -500,7 +500,6 @@ var timer_maker = function (  ) {
 					if (soundFile2 === "") {
 						setTimeout(function() {
 							Experigen.screen().advance();
-							$(part).find(':input[type!="hidden"][class!="scaleButton"]').first().focus();// !!!!!!!!!!!!
 						}, 4000);
 					} else {
 						soundManager.play(soundID2);
