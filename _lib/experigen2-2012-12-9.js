@@ -175,7 +175,7 @@ var timer_maker = function (  ) {
 				//   }
 
 					// give focus to the first form object inside, if any
-					$(part).find(':input[type!="hidden"][class!="scaleButton"]').first().focus();
+					$(part).find(':input[type!="hidden"]').last().focus();
 				}
 			}
 		}
@@ -481,8 +481,8 @@ var timer_maker = function (  ) {
 					soundManager.createSound({
 						id: soundID2,
 						url: soundFile2,
-						autoPlay: true, 
-						autoLoad: true,
+						autoPlay: false, 
+						autoLoad: false,
 						onload:function() {
 						},
 						onfinish:function() {

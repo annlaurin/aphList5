@@ -473,8 +473,8 @@ var timer_maker = function (  ) {
 		soundManager.createSound({
 			id: soundID,
 			url: soundFile,
-			autoPlay: false, 
-			autoLoad: false,		// fixing troubles
+			autoPlay: true, 
+			autoLoad: true,		// fixing troubles
 			onload:function() {
 
 				if (soundFile2 != "") {
@@ -482,7 +482,7 @@ var timer_maker = function (  ) {
 						id: soundID2,
 						url: soundFile2,
 						autoPlay: false, 
-						autoLoad: true,
+						autoLoad: false,
 						onload:function() {
 						},
 						onfinish:function() {
