@@ -7,7 +7,13 @@
 
 <p>
 <%= makeScale({buttons: ["Ошибка!"], edgelabels: ["", ""], disable:true, hide:true, rightAnswer: "1"}) %>
+</div>
 
+
+<div class="trialpartWrapper" style="clear:both; text-align: center;">  
+	Ready for the next item?
+	<p>
+	<%= makeScale({buttons: ["sure", "totes"], edgelabels: ["", ""], disable: true  }) %>
 </div>
 <input type="hidden" name="condition" value="<%= condition %>" />
 <input type="hidden" name="item" value="<%= item %>" />
