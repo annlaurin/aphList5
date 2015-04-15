@@ -3,7 +3,7 @@
 	Нажмите на кнопку "Ошибка!", если в предложении есть ошибка. Если ошибок нет, не нажимайте ничего. 
 <p>
 
-	<%= makeSoundButton({soundFile: audio + '.mp3'}) %>
+	<%= makeSoundButton({soundFile: audio + '.mp3'}, disable:true, hide:true) %>
 <p>
 
 <%= makeScale({buttons: ["Ошибка!"], edgelabels: ["", ""], disable:true, hide:true, rightAnswer: "1"}) %>
