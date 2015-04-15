@@ -5,12 +5,7 @@
 
 	<%= makeSoundButton("tr1.mp3") %>
 
-<p>
-<%= makeScale({buttons: ["Ошибка!"], edgelabels: ["", ""], disable:true, hide:true, rightAnswer: 1}) %>
-</div>
+<br>
+<%= makeScale({buttons: ["Ошибка!"], edgelabels: ["", ""], disable:true, hide:true, rightAnswer: "1"}) %>
 
-
-<div class="trialpartWrapper" style="text-align: left;">
-	<p>
-	<%= continueButton() %>
 </div>
