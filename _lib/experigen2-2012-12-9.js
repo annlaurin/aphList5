@@ -517,7 +517,7 @@ var timer_maker = function (  ) {
 		str += '>';
 		return str;
 	}
-	$(part).find(':input[type!="hidden"][class!="scaleButton"]').first().focus();  // trying to activate next element
+	//$(part).find(':input[type!="hidden"][class!="scaleButton"]').first().focus();  // trying to activate next element
 	return that;
 }
 
