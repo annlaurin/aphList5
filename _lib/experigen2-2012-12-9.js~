@@ -184,7 +184,8 @@ var timer_maker = function (  ) {
 
 	that.moveFocus = function() {
 		part = "#" + "part" + Experigen.screen().currentPart;
-		$(part).find(':input[type!="hidden"][class=="scaleButton"]').first().focus();
+		b = $(part).find(':input[type!="hidden"][class="scaleButton"]').first();
+		b.focus();
  	}
 
 	that.makeScale = function(obj) {
