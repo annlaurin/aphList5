@@ -494,7 +494,7 @@ var timer_maker = function (  ) {
 							if (advance) {
 								setTimeout(function() {
 									Experigen.screen().advance();
-								}, 4000);
+								}, 6000);
 							}
 						}
 					});
@@ -505,7 +505,7 @@ var timer_maker = function (  ) {
 					if (soundFile2 === "") {
 						setTimeout(function() {
 							Experigen.screen().advance();
-						}, 4000);
+						}, 6000);
 					} else {
 						soundManager.play(soundID2);
 					}
