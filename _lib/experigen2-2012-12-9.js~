@@ -182,6 +182,10 @@ var timer_maker = function (  ) {
 		return true;
 	}
 
+	that.moveFocus = function() {
+		part = "#" + "part" + Experigen.screen().currentPart;
+		$(part).find(':input[type!="hidden"][class=="scaleButton"]').first().focus();
+ 	}
 
 	that.makeScale = function(obj) {
 		Experigen.screen().responses++;

@@ -182,6 +182,10 @@ var timer_maker = function (  ) {
 		return true;
 	}
 
+	that.moveFocus = function() {
+		part = "#" + "part" + Experigen.screen().currentPart;
+		$(part).find(':input[type!="hidden"][class=="scaleButton"]').first().focus();
+ 	}
 
 	that.makeScale = function(obj) {
 		Experigen.screen().responses++;
@@ -512,7 +516,7 @@ var timer_maker = function (  ) {
 		str += '<input type="button" ';
 		str += ' id="' + soundID +'"';
 		str += ' value="' + label + '"';
-		str += ' onClick="Experigen.screen().playSound(\'' + soundID + '\',this); document.getElementById(\'' + soundID + '\').style.display=\'none\'; moveFocus(); if(Experigen.trackTimes) {Experigen.timeTracker.set_start_time();}" ';
+		str += ' onClick="Experigen.screen().playSound(\'' + soundID + '\',this); document.getElementById(\'' + soundID + '\').style.display=\'none\'; Experigen.screen().moveFocus(); if(Experigen.trackTimes) {Experigen.timeTracker.set_start_time();}" ';
 		str += ' class="soundbutton"'
 		str += '>';
 		return str;
